@@ -55,7 +55,7 @@ export default defineConfig(({ mode }) => ({
     react(),
     tsconfigPaths(),
     mkcert(),
-    // mode === "development" && componentTagger()
+    mode === "development" && componentTagger()
   ].filter(Boolean),
   resolve: {
     alias: {
